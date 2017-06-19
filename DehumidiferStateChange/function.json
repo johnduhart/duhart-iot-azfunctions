@@ -1,0 +1,23 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "name": "req",
+      "type": "httpTrigger",
+      "direction": "in"
+    },
+    {
+      "name": "$return",
+      "type": "http",
+      "direction": "out"
+    },
+    {
+      "type": "blob",
+      "name": "inputBlob",
+      "path": "iot-state/dehumid",
+      "connection": "AzureWebJobsStorage",
+      "direction": "inout"
+    }
+  ],
+  "disabled": false
+}
